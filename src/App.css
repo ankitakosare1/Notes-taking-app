@@ -1,0 +1,16 @@
+
+.App{
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.mainPanel{
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+}

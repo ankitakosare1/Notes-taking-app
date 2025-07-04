@@ -1,0 +1,108 @@
+.modal-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    inset: 0;
+}
+
+.modal {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.modal .title {
+    font-weight: 500;
+    margin-bottom: -0.5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.label-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.row label {
+    font-weight: 500;
+}
+
+.row input {
+    flex: 1;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-circle.selected {
+    border: 2px solid black;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.create-button {
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    background-color: #16008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .label-input-wrapper {
+        display: flex;
+    }
+
+    .create-button {
+        width: 90%;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+}

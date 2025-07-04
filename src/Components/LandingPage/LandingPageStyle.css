@@ -1,0 +1,42 @@
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  background-color: #e9f1fb;
+  color: #1a064f;
+  margin-top: -40px;
+}
+
+.backgroundImage {
+  max-width: 300px;
+}
+
+.landingPage h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.landingPage p {
+  font-size: 1rem;
+  margin: 2px 0;
+  font-weight: bold;
+}
+
+.encrypted {
+  position: absolute;
+  display: flex;
+  font-size: 0.9rem;
+  color: #888;
+  bottom: 5px;
+  gap: 6px;
+}
+
+.lockIcon {
+  font-size: 18px;
+  margin-top: 2px;
+}
